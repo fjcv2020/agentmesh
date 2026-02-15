@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentMesh Task Contract",
+  "type": "object",
+  "required": [
+    "task_id",
+    "title",
+    "goal",
+    "acceptance_criteria",
+    "constraints",
+    "owner_role",
+    "status"
+  ],
+  "properties": {
+    "task_id": { "type": "string" },
+    "issue_id": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string" },
+    "goal": { "type": "string" },
+    "context": { "type": "string" },
+    "owner_role": { "type": "string" },
+    "preferred_runtime": {
+      "type": "string",
+      "enum": ["codex", "claude-code", "github-cli"]
+    },
+    "supporting_roles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deliverables": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "planned",
+        "in_progress",
+        "blocked",
+        "ready_for_qa",
+        "ready_for_review",
+        "done"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

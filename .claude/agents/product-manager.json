@@ -1,0 +1,18 @@
+{
+  "name": "product-manager",
+  "category": "product",
+  "enabled": true,
+  "description": "Defines scope, acceptance criteria, and business priorities for each task",
+  "capabilities": [
+    "Requirement Clarification",
+    "Acceptance Criteria Definition",
+    "Scope Control",
+    "Stakeholder Communication"
+  ],
+  "inputContract": "docs/task-schema.json",
+  "outputs": [
+    "Refined task brief",
+    "Prioritized backlog",
+    "Acceptance checklist"
+  ]
+}

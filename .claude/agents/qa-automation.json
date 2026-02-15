@@ -1,0 +1,19 @@
+{
+  "name": "qa-automation",
+  "category": "quality",
+  "enabled": true,
+  "description": "Runs automated verification including browser-based functional checks",
+  "capabilities": [
+    "Test Strategy",
+    "Automated Testing",
+    "Regression Checks",
+    "Browser Validation",
+    "Bug Triage"
+  ],
+  "inputContract": "docs/task-schema.json",
+  "outputs": [
+    "QA report",
+    "Defect list",
+    "Go/No-go recommendation"
+  ]
+}

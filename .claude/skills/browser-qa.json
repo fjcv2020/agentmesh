@@ -1,0 +1,12 @@
+{
+  "name": "browser-qa",
+  "category": "quality",
+  "enabled": true,
+  "description": "Browser-driven validation for user-facing functionality and acceptance criteria",
+  "capabilities": [
+    "E2E Smoke Testing",
+    "Critical Flow Verification",
+    "Visual Regression Spot Checks",
+    "Evidence Capture"
+  ]
+}

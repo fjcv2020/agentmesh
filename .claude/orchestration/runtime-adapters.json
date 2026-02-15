@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "default_runtime": "codex",
+  "runtimes": {
+    "codex": {
+      "use_for": [
+        "implementation",
+        "refactor",
+        "test-fix",
+        "code-review-assist"
+      ],
+      "handoff_format": "docs/task-schema.json",
+      "command_template": "codex run --task-file {task_file}"
+    },
+    "claude-code": {
+      "use_for": [
+        "discovery",
+        "planning",
+        "architecture",
+        "risk-analysis"
+      ],
+      "handoff_format": "docs/task-schema.json",
+      "command_template": "claude-code run --task-file {task_file}"
+    },
+    "github-cli": {
+      "use_for": [
+        "issue-create",
+        "status-sync",
+        "pr-create",
+        "review-ops"
+      ],
+      "handoff_format": "docs/task-schema.json",
+      "command_template": "gh {gh_subcommand}"
+    }
+  },
+  "policy": {
+    "github_is_system_of_record": true,
+    "all_tasks_require_issue_id": true,
+    "manager_approval_required_for_high_risk": true
+  }
+}

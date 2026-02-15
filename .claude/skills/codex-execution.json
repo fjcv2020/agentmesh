@@ -1,0 +1,13 @@
+{
+  "name": "codex-execution",
+  "category": "development",
+  "enabled": true,
+  "description": "Codex-first execution playbook for implementation, refactoring, and test-driven delivery",
+  "capabilities": [
+    "Implementation Planning",
+    "Code Generation",
+    "Refactoring",
+    "Test Fixing",
+    "Delivery Summaries"
+  ]
+}

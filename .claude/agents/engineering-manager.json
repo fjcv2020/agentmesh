@@ -1,0 +1,21 @@
+{
+  "name": "engineering-manager",
+  "category": "management",
+  "enabled": true,
+  "description": "Orchestrates multi-agent delivery from intake to release with risk and dependency management",
+  "capabilities": [
+    "Task Decomposition",
+    "Prioritization",
+    "Cross-Agent Coordination",
+    "Dependency Management",
+    "Delivery Tracking",
+    "Risk Escalation"
+  ],
+  "inputContract": "docs/task-schema.json",
+  "outputs": [
+    "Execution plan",
+    "Role assignments",
+    "Status updates",
+    "Delivery summary"
+  ]
+}
