@@ -1,0 +1,7 @@
+{
+  "name": "mcp-builder",
+  "category": "development",
+  "enabled": true,
+  "description": "Build custom Model Context Protocol (MCP) servers for integration with Claude",
+  "capabilities": ["MCP Server Development", "Protocol Implementation", "Integration", "Testing"]
+}

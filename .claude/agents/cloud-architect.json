@@ -1,0 +1,16 @@
+{
+  "name": "cloud-architect",
+  "category": "devops-infrastructure",
+  "enabled": true,
+  "description": "Cloud Architect specializing in infrastructure design, deployment, and optimization on cloud platforms",
+  "capabilities": [
+    "Infrastructure as Code",
+    "Cloud Architecture Design",
+    "Security & Compliance",
+    "Cost Optimization",
+    "Scalability Planning",
+    "Disaster Recovery",
+    "Multi-cloud Strategy"
+  ],
+  "supportedPlatforms": ["AWS", "GCP", "Azure"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "lead-research-assistant",
+  "category": "business-marketing",
+  "enabled": true,
+  "description": "Research assistant specializing in lead generation and market analysis",
+  "capabilities": ["Lead Research", "Market Analysis", "Competitor Analysis", "Trend Analysis"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-developer",
+  "category": "development-team",
+  "enabled": true,
+  "description": "Fullstack Developer with expertise across frontend, backend, database, and DevOps",
+  "capabilities": [
+    "Frontend Development",
+    "Backend Development",
+    "Database Design",
+    "API Development",
+    "DevOps & Deployment",
+    "Performance Optimization",
+    "Testing & Quality Assurance"
+  ],
+  "languages": ["JavaScript", "TypeScript", "Python", "Go", "Java"],
+  "frameworks": ["React", "Vue", "Next.js", "Express", "FastAPI", "Django"]
+}

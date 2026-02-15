@@ -1,0 +1,7 @@
+{
+  "name": "gcp-cloud-run",
+  "category": "development",
+  "enabled": true,
+  "description": "Deploy, manage, and optimize applications on Google Cloud Run",
+  "capabilities": ["Deployment", "Container Management", "Auto-scaling", "Cost Optimization"]
+}

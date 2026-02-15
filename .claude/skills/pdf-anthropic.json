@@ -1,0 +1,7 @@
+{
+  "name": "pdf-anthropic",
+  "category": "document-processing",
+  "enabled": true,
+  "description": "Process and analyze PDF documents using Anthropic's APIs",
+  "capabilities": ["PDF Extraction", "Text Analysis", "Data Processing", "Document Understanding"]
+}

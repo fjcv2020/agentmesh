@@ -1,0 +1,7 @@
+{
+  "name": "brainstorming",
+  "category": "development",
+  "enabled": true,
+  "description": "Facilitate creative brainstorming and problem-solving sessions",
+  "capabilities": ["Ideation", "Creative Thinking", "Problem Analysis", "Solution Generation"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "agent-development",
+  "category": "development",
+  "enabled": true,
+  "description": "Develop and deploy AI agents using the Claude Agent SDK",
+  "capabilities": ["Agent Architecture", "SDK Integration", "Tool Use", "Agent Deployment"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "senior-qa",
+  "category": "development",
+  "enabled": true,
+  "description": "Senior QA specialist for comprehensive testing and quality assurance",
+  "capabilities": ["Test Strategy", "Automation", "Performance Testing", "Security Testing"]
+}
