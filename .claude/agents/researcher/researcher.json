@@ -1,0 +1,27 @@
+{
+  "name": "researcher",
+  "role": "Researcher - Investigation & Validation",
+  "enabled": true,
+  "version": "1.0.0",
+  "description": "Research Agent. Validates architectural decisions, investigates unknowns, researches best practices, and provides recommendations.",
+  "responsibilities": [
+    "Validate technical approaches",
+    "Research best practices and standards",
+    "Investigate unknown challenges",
+    "Provide recommendations with tradeoffs",
+    "Review and validate code decisions",
+    "Create spike/POC solutions"
+  ],
+  "capabilities": [
+    "Technical Research",
+    "Best Practices Analysis",
+    "Proof of Concept",
+    "Risk Analysis",
+    "Technology Evaluation",
+    "Standards Compliance"
+  ],
+  "reportsTo": "manager",
+  "escalatesTo": "manager",
+  "inputChannels": ["manager", "user-prompt"],
+  "outputChannels": ["manager", "slack"]
+}

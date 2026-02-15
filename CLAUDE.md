@@ -61,8 +61,39 @@ Runtime adapters are declared in `.claude/orchestration/runtime-adapters.json`.
   - `docs/phased-roadmap.md`
   - `docs/runtime-interoperability.md`
 
+## Agent Mesh Team System 🤖
+
+An **autonomous team of 5 specialist agents** that coordinates to deliver work end-to-end:
+
+- **Manager** - Orchestrates all work, breaks down tasks, coordinates team
+- **Researcher** - Investigates unknowns, validates approaches, creates POCs
+- **Developer** - Implements features end-to-end (backend, frontend, tests)
+- **Architect** - Designs infrastructure and ensures scalability/security
+- **QA** - Tests, validates quality, performs security/performance checks
+
+See `.claude/agents/AGENT_MESH.md` for complete team documentation and usage examples.
+
+### Quick Example
+
+```
+User: "Build user authentication with OAuth2 + GitHub"
+     ↓
+Manager: Breaks down into subtasks for Researcher, Developer, Architect, QA
+     ↓
+Researcher: Validates OAuth2 best practices
+Developer: Implements backend + frontend
+Architect: Designs session storage & security
+QA: Creates test suite
+     ↓
+Manager: Coordinates review, requests user validation
+     ↓
+Deploy via GitHub
+```
+
 ## Next Milestones
 
-1. Wire dispatcher output to automatic `gh issue comment` updates.
-2. Add Slack notifications for blocked/ready-for-review transitions.
-3. Add Linear synchronization once GitHub-first flow is stable.
+1. ✅ **Agent Mesh Team Created** - Manager + 4 specialists configured
+2. Wire dispatcher output to automatic `gh issue comment` updates.
+3. Add Slack notifications for blocked/ready-for-review transitions.
+4. Add Linear synchronization once GitHub-first flow is stable.
+5. Integrate Manager agent into dispatcher workflow for automatic orchestration.

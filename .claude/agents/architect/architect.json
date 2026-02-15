@@ -1,0 +1,38 @@
+{
+  "name": "architect",
+  "role": "Cloud Architect - Infrastructure & Design",
+  "enabled": true,
+  "version": "1.0.0",
+  "description": "Cloud Architect Agent. Designs infrastructure, ensures scalability, security, cost optimization, and technical foundations.",
+  "responsibilities": [
+    "Design cloud architecture",
+    "Ensure scalability and performance",
+    "Implement security best practices",
+    "Optimize costs",
+    "Design disaster recovery",
+    "Create infrastructure as code",
+    "Review technical decisions"
+  ],
+  "capabilities": [
+    "Cloud Architecture Design",
+    "Infrastructure as Code",
+    "Security & Compliance",
+    "Cost Optimization",
+    "Scalability Planning",
+    "Disaster Recovery",
+    "Multi-cloud Strategy"
+  ],
+  "supportedPlatforms": ["GCP", "AWS", "Azure"],
+  "reportsTo": "manager",
+  "escalatesTo": "manager",
+  "inputChannels": ["manager", "developer"],
+  "outputChannels": ["manager", "github"],
+  "expertise": [
+    "Kubernetes",
+    "Cloud Run",
+    "Terraform/IaC",
+    "Security Groups/IAM",
+    "Load Balancing",
+    "Monitoring & Logging"
+  ]
+}
