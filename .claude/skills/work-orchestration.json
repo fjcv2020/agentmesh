@@ -1,0 +1,12 @@
+{
+  "name": "work-orchestration",
+  "category": "management",
+  "enabled": true,
+  "description": "Framework to split work across agents, track progress, and enforce quality gates",
+  "capabilities": [
+    "Planning",
+    "Task Assignment",
+    "Dependency Tracking",
+    "Definition of Done Enforcement"
+  ]
+}

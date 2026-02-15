@@ -1,0 +1,12 @@
+{
+  "name": "github-cli-ops",
+  "category": "orchestration",
+  "enabled": true,
+  "description": "Operational playbook for using GitHub CLI as the canonical task lifecycle backend",
+  "capabilities": [
+    "Issue Automation",
+    "PR Automation",
+    "Labeling & Status",
+    "Review Coordination"
+  ]
+}

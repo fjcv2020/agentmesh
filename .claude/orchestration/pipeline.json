@@ -1,0 +1,43 @@
+{
+  "workflow": "agentmesh-e2e-v2",
+  "source_of_truth": "github",
+  "default_runtime": "codex",
+  "stages": [
+    {
+      "name": "intake",
+      "owner": "product-manager",
+      "runtime": "claude-code",
+      "output": "structured-task"
+    },
+    {
+      "name": "planning",
+      "owner": "engineering-manager",
+      "runtime": "claude-code",
+      "output": "execution-plan"
+    },
+    {
+      "name": "implementation",
+      "owner": "backend-engineer",
+      "runtime": "codex",
+      "output": "code+tests"
+    },
+    {
+      "name": "qa-automation",
+      "owner": "qa-automation",
+      "runtime": "codex",
+      "output": "qa-report"
+    },
+    {
+      "name": "review-merge",
+      "owner": "tech-lead",
+      "runtime": "github-cli",
+      "output": "approved-pr"
+    }
+  ],
+  "gates": [
+    "tests_pass",
+    "acceptance_criteria_met",
+    "qa_report_attached",
+    "github_status_synced"
+  ]
+}

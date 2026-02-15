@@ -1,71 +1,68 @@
 # AgentMesh Project
 
-## Project Overview
+## Project Vision
 
-This is an AgentMesh project configured with specialized agents and skills for cloud infrastructure, full-stack development, document processing, and team collaboration.
+AgentMesh is a multi-runtime delivery system designed to execute software work end-to-end as a realistic team (manager + specialists), with strong quality gates and a single system of record.
 
-## Installed Agents
+## Runtime Strategy (Codex-first, interoperable)
 
-### Cloud Infrastructure
-- **Cloud Architect** (`devops-infrastructure/cloud-architect`)
-  - Specializes in cloud infrastructure design and deployment
-  - Expertise in scalability, security, and cost optimization
+- **Codex (default runtime)**: implementation, refactoring, test fixing, technical execution.
+- **Claude Code**: discovery, planning, architecture, risk analysis.
+- **GitHub CLI (`gh`)**: issue/PR lifecycle and status persistence.
 
-### Development Team
+Runtime adapters are declared in `.claude/orchestration/runtime-adapters.json`.
+
+## Team Topology
+
+### Management & Product
+- **Engineering Manager** (`management/engineering-manager`)
+- **Product Manager** (`product/product-manager`)
+
+### Engineering
 - **Fullstack Developer** (`development-team/fullstack-developer`)
-  - Full-stack development across frontend, backend, and infrastructure
-  - Database design, API development, and deployment
+- **Cloud Architect** (`devops-infrastructure/cloud-architect`)
+- **Platform Engineer** (`devops-infrastructure/platform-engineer`)
 
-## Installed Skills
+### Quality
+- **QA Automation** (`quality/qa-automation`)
 
-### Development Skills
-- **GCP Cloud Run** (`development/gcp-cloud-run`)
-  - Deploy and manage applications on Google Cloud Run
-  
-- **MCP Builder** (`development/mcp-builder`)
-  - Build custom Model Context Protocol servers
-  
-- **Brainstorming** (`development/brainstorming`)
-  - Creative problem-solving and ideation sessions
-  
+## Core Skills
+
+### Orchestration
+- **Work Orchestration** (`management/work-orchestration`)
+- **GitHub CLI Ops** (`orchestration/github-cli-ops`)
+
+### Development
+- **Codex Execution** (`development/codex-execution`)
 - **Agent Development** (`development/agent-development`)
-  - Build and deploy custom AI agents
+- **MCP Builder** (`development/mcp-builder`)
+- **GCP Cloud Run** (`development/gcp-cloud-run`)
 
-### Document Processing
-- **PDF Processing with Anthropic** (`document-processing/pdf-anthropic`)
-  - Advanced PDF document analysis and processing
-
-### Quality Assurance
+### Quality
 - **Senior QA** (`development/senior-qa`)
-  - Comprehensive testing strategies and QA automation
+- **Browser QA** (`quality/browser-qa`)
 
-### Business & Marketing
-- **Lead Research Assistant** (`business-marketing/lead-research-assistant`)
-  - Lead research and market analysis
+## Delivery Workflow (MVP)
 
-## Development
+1. Product Manager refines request and acceptance criteria.
+2. Engineering Manager decomposes tasks and assigns owner roles.
+3. Dispatcher maps each task to a runtime (`scripts/agentmesh_dispatcher.py`).
+4. Specialists execute work in Codex/Claude Code.
+5. GitHub CLI persists artifacts and state transitions.
+6. QA validates behavior and manager requests human approval when needed.
 
-To work with this project:
+## Operating Contracts
 
-```bash
-npm install          # Install dependencies
-npm test             # Run tests
-npm run dev          # Start development
-```
+- Task handoffs follow `docs/task-schema.json`.
+- Stage ownership and gates are defined in `.claude/orchestration/pipeline.json`.
+- Runtime mapping is defined in `.claude/orchestration/runtime-adapters.json`.
+- Additional operating references:
+  - `docs/agentmesh-blueprint.md`
+  - `docs/phased-roadmap.md`
+  - `docs/runtime-interoperability.md`
 
-## Project Structure
+## Next Milestones
 
-```
-.
-├── CLAUDE.md         # This file
-├── package.json      # Project configuration
-└── .claude/          # Claude Code configuration
-    ├── agents/       # Agent configurations
-    └── skills/       # Skill configurations
-```
-
-## Next Steps
-
-1. Review the installed agents and skills above
-2. Configure your development environment
-3. Start using the agents and skills for your project tasks
+1. Wire dispatcher output to automatic `gh issue comment` updates.
+2. Add Slack notifications for blocked/ready-for-review transitions.
+3. Add Linear synchronization once GitHub-first flow is stable.

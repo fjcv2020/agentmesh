@@ -1,0 +1,14 @@
+{
+  "task_id": "AM-101",
+  "title": "Implement API health endpoint",
+  "goal": "Expose /healthz endpoint with dependency checks",
+  "acceptance_criteria": [
+    "GET /healthz returns 200 when dependencies are up",
+    "Endpoint covered by tests"
+  ],
+  "constraints": [
+    "No breaking changes in existing routes"
+  ],
+  "owner_role": "backend-engineer",
+  "status": "in_progress"
+}
