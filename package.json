@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "claude-code-templates": "^1.28.16"
+  }
+}
